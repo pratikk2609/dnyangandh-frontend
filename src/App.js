@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Pravin Again with Pratik
+          Learn Pravin Again with Pratik and Sarika
         </a>
       </header>
     </div>
