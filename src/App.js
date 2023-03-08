@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Home Page, Pratiksha Sailee and Rutuja
+          Home Page with Appa
         </a>
       </header>
     </div>
