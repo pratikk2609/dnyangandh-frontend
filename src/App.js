@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Pravin Again with Pratik and Sarika
+          Home Page, Pratiksha Sailee and Rutuja
         </a>
       </header>
     </div>
