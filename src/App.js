@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Home Page with Appa
+          Dnyangandh Pratishtan
         </a>
       </header>
     </div>
