@@ -9,7 +9,7 @@ function Home()
         <div className='App'>
             <Fragment>
                 <div className="header">
-                    <a href="#default" className="logo">Login Page</a>
+                    <a href="#default" className="logo">Dnyangandh Pratishtan</a>
                     <div className="header-right">
                         <a href="/">Home</a>
                         <a href="/user">Register</a>
