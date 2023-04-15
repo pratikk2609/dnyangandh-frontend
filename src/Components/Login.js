@@ -18,7 +18,7 @@ function Login() {
     };
     console.log(JSON.stringify(user));
 
-    axios.post("http://localhost:5555/user/authenticate", user)
+    axios.post("/api/user/authenticate", user)
       .then(response => {
         console.log('--------------')
         console.log(response.data)
