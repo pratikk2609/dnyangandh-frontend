@@ -9,6 +9,9 @@ function Login() {
     const [password, setPassword] = useState([{}])
 
     const handleSubmit = (e) => {
+        console.log(name)
+        console.log(email)
+        console.log(password)
     }
 
     return (
