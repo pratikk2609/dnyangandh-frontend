@@ -13,28 +13,9 @@ function Register() {
     const[password,setPassword] = useState([{}])
     //const[output,setOutput] = useState([{}])
     //const[data,setData] = useState([{}])
-    const baseURL = ""
+    //const baseURL = ""
 
     const handleSubmit = (e) => {
-
-    fetch(baseURL, {
-        method: 'POST',
-        headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-        name: name,
-        email: email,
-        age: age,
-        gender: gender,
-        number: number,
-        address: address,
-        password: password
-        })
-    })
-    .then(Response => Response.json())
-    .then(data => {setData(data)})
 
     }
 
