@@ -1,9 +1,9 @@
-import './App.css';
+import Register from './Components/Register.js'
 
 function App() {
   return (
     <div>
-      Hello
+      <Register/>
     </div>
   );
 }
