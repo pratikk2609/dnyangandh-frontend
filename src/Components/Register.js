@@ -2,6 +2,7 @@ import React, { useState,Fragment } from "react"
 import { Button,Form } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
     const[email,setEmail] = useState([{}])
@@ -11,6 +12,7 @@ function Register() {
     const[number,setNumber] = useState([{}])
     const[address,setAddress] = useState([{}])
     const[password,setPassword] = useState([{}])
+    const navigate = useNavigate("");
     //const[output,setOutput] = useState([{}])
     //const[data,setData] = useState([{}])
     //const baseURL = ""
@@ -35,7 +37,9 @@ function Register() {
             body: JSON.stringify(user)
         };
         fetch('http://localhost:5555/user', requestOptions)
-            .then(response => response.json())
+            .then(response => {
+                navigate("/user/authenticate")
+            })
             .then(data => console.log("success"));
         }
 
