@@ -2,13 +2,12 @@ import React, { useState, Fragment } from "react";
 import { Button, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 function Login() {
   const [name, setName] = useState([{}]);
   const [password, setPassword] = useState([{}]);
-  const [data, setData] = useState([{}]);
   const navigate = useNavigate("");
 
   const handleSubmit = (e) => {
@@ -24,7 +23,7 @@ function Login() {
         console.log('--------------')
         console.log(response.data)
         console.log('--------------')
-        if(response.data.data == "success"){
+        if(response.data.data === "success"){
           console.log("I am in success")
           navigate("/");
         }
