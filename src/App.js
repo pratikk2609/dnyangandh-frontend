@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Dnyangandh Pratishtan Pratiksha 
+          Dnyangandh Pratishtan Pratiksha ,sailee
         </a>
       </header>
     </div>
