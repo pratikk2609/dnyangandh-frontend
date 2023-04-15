@@ -16,9 +16,28 @@ function Register() {
     //const baseURL = ""
 
     const handleSubmit = (e) => {
+        const user =
+        {
+            "username": name,
+            "password": password,
+            "email": email,
+            "age": age,
+            "address" : address,
+            "gender" : gender,
+            "phone_number" : number,
+            "role" : "student"
+        }
+        console.log(user)
 
-
-    }
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(user)
+        };
+        fetch('http://localhost:5555/user', requestOptions)
+            .then(response => response.json())
+            .then(data => console.log("success"));
+        }
 
     return(
 

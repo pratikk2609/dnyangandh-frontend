@@ -5,7 +5,8 @@ function App() {
   return (
     <div>
       {/* <Register/> */}
-      <Login/>
+      {/* <Login/> */}
+      <Register/>
     </div>
   );
 }
