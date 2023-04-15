@@ -12,29 +12,34 @@ function Login() {
   const navigate = useNavigate("");
 
   const handleSubmit = (e) => {
+
     const user = {
       name: name,
       password: password,
     };
-    console.log(user);
+    console.log(JSON.stringify(user));
 
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(user),
-    };
-
-    /*axios.post("http://localhost:5555/user/authenticate", requestOptions)
-        .then(response =>{
-            console.log(response)
-        })*/
-
-    fetch("http://localhost:5555/user/authenticate", requestOptions)
+    axios.post("http://localhost:5555/user/authenticate", user)
       .then(response => {
-        return response;
+        console.log('--------------')
+        console.log(response.data)
+        console.log('--------------')
+        if(response.data.data == "success"){
+          console.log("I am in succuss")
+          navigate("/");
+        }
         
       })
-      .then((data) => console.log(data));
+
+    // fetch("http://localhost:5555/user/authenticate", requestOptions)
+    //   .then(response => {
+    //     console.log('--------------')
+    //     console.log(response.text());
+    //     console.log('--------------')
+    //     return response;
+
+    //   })
+    //   .then((data) => console.log(data));
   };
 
   return (
