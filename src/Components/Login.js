@@ -25,7 +25,7 @@ function Login() {
         console.log(response.data)
         console.log('--------------')
         if(response.data.data == "success"){
-          console.log("I am in succuss")
+          console.log("I am in success")
           navigate("/");
         }
         
