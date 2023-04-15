@@ -18,9 +18,9 @@ return (
             <div className="header">
                 <a href="#default" className="logo">Login Page</a>
                 <div className="header-right">
-                    {/* <a href="/">Home</a> */}
-                    {/* <a href="/register">Register</a> */}
-                    {/* <a href="/login">Login</a> */}
+                    <a href="/">Home</a>
+                    <a href="/register">Register</a>
+                    <a href="/login">Login</a>
                 </div>
 
             </div>
