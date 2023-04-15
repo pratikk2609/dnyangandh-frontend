@@ -2,7 +2,7 @@ import React, { useState,Fragment } from "react"
 import { Button,Form } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
     const[email,setEmail] = useState([{}])
