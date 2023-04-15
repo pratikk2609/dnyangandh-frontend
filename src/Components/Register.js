@@ -13,11 +13,12 @@ function Register() {
     const[password,setPassword] = useState([{}])
     //const[output,setOutput] = useState([{}])
     //const[data,setData] = useState([{}])
-    const baseURL = ""
+    //const baseURL = ""
 
     const handleSubmit = (e) => {
-
-    fetch(baseURL, {
+        console.log('I am in handle submit')
+        console.log(email)
+    /*fetch(baseURL, {
         method: 'POST',
         headers: {
         'Accept': 'application/json',
@@ -32,9 +33,7 @@ function Register() {
         address: address,
         password: password
         })
-    })
-    .then(Response => Response.json())
-    .then(data => {setData(data)})
+    })*/
 
     }
 
@@ -58,7 +57,7 @@ function Register() {
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
                     <Form.Control type="text" placeholder="Enter Name" required
-                    onChange={(e) => setEmail(e.target.value)} ></Form.Control>
+                    onChange={(e) => setName(e.target.value)} ></Form.Control>
                 </Form>
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
@@ -68,22 +67,22 @@ function Register() {
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
                     <Form.Control type="text" placeholder="Enter Age" required
-                    onChange={(e) => setEmail(e.target.value)} ></Form.Control>
+                    onChange={(e) => setAge(e.target.value)} ></Form.Control>
                 </Form>
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
                     <Form.Control type="text" placeholder="Enter Gender" required
-                    onChange={(e) => setEmail(e.target.value)} ></Form.Control>
+                    onChange={(e) => setGender(e.target.value)} ></Form.Control>
                 </Form>
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
                     <Form.Control type="text" placeholder="Enter Phone No." required
-                    onChange={(e) => setEmail(e.target.value)} ></Form.Control>
+                    onChange={(e) => setNumber(e.target.value)} ></Form.Control>
                 </Form>
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
                     <Form.Control type="text" placeholder="Enter Address" required
-                    onChange={(e) => setEmail(e.target.value)} ></Form.Control>
+                    onChange={(e) => setAddress(e.target.value)} ></Form.Control>
                 </Form>
 
                 <Form className="d-grip gap-1" style={{margin:"4rem"}}>
