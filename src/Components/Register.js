@@ -47,8 +47,8 @@ function Register() {
             <a href="#default" className="logo">Registration Page</a>
             <div className="header-right">
                 <a href="/">Home</a>
-                <a href="/register">Register</a>
-                <a href="/login">Login</a>
+                <a href="/user">Register</a>
+                <a href="/user/authenticate">Login</a>
             </div>
             
         </div>
@@ -93,6 +93,9 @@ function Register() {
                 </Form>
 
                 <Button size='lg' onClick={(e) => handleSubmit(e)} type="submit">Submit</Button>
+
+                <br/>
+                <a href="/user/authenticate">Have an account</a>
 
             </div>
         </body>
