@@ -23,4 +23,4 @@ commands:
 
 8- yaml file will be created and runner will start.
 
-removed all hardcoding of localhost:5555 to relative path of nginx command
+removed all hardcoding of localhost:5555 to relative path of nginx command - Again
