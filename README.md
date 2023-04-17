@@ -1,4 +1,4 @@
-this is dnygandha readme file
+this is Dnyangandh readme file
 
 commands for creating runner: 
 1- create a new dir :- mkdir actions-runner && cd actions-runner
@@ -12,35 +12,35 @@ commands for creating runner:
 5- Create the runner and start the configuration experience :- ./config.sh --url https://github.com/pratikk2609/dnyangandh-backend --token A2YSTJAIXDRCVEAKMUYUZZLEGJ3HQ
 
 After configuring runner:
-ls
-sudo ./svc.sh install
-sudo ./svc.sh start
+-ls
+-sudo ./svc.sh install
+-sudo ./svc.sh start
 
-yaml file will be created and runner will start.
+-yaml file will be created and runner will start.
 
-After committing yaml file:
-sudo apt install nginx
+-After committing yaml file:
+-sudo apt install nginx
 
-After nginx site comes up:
-ls
-cd _work
-ls
-cd folder of github
-ls
-cd build
-pwd
-cd /etc/nginx
-ls
-cd sites-available
-ls
-sudo rm default
-sudo nano default
-sudo service nginx restart
-sudo chmod +x
+-After nginx site comes up:
+-ls
+-cd _work
+-ls
+-cd folder of github
+-ls
+-cd build
+-pwd
+-cd /etc/nginx
+-ls
+-cd sites-available
+-ls
+-sudo rm default
+-sudo nano default
+-sudo service nginx restart
+-sudo chmod +x
 
 Code for default nginx file:
 
-server {
+-server {
   listen 80 default_server;
   server_name _;
 
@@ -52,4 +52,4 @@ server {
 
 }
 
-Chmod + all path
+-Chmod + all path
