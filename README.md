@@ -1,12 +1,6 @@
 this is dnygandha readme file
-to be done this week 
-create api and login page
-create new ec2 instance and document it 
-also write commands and why those commands
-should be idiot proof so anyone can do it.
 
-
-commands: 
+commands for creating runner: 
 1- create a new dir :- mkdir actions-runner && cd actions-runner
 
 2- Download the latest runner package :-curl -o actions-runner-linux-x64-2.303.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.303.0/actions-runner-linux-x64-2.303.0.tar.gz
@@ -17,10 +11,45 @@ commands:
 
 5- Create the runner and start the configuration experience :- ./config.sh --url https://github.com/pratikk2609/dnyangandh-backend --token A2YSTJAIXDRCVEAKMUYUZZLEGJ3HQ
 
-6- run sudo ./svc.sh install
+After configuring runner:
+ls
+sudo ./svc.sh install
+sudo ./svc.sh start
 
-7- run sudo ./svc.sh start
+yaml file will be created and runner will start.
 
-8- yaml file will be created and runner will start.
+After committing yaml file:
+sudo apt install nginx
 
-removed all hardcoding of localhost:5555 to relative path of nginx command - Again
+After nginx site comes up:
+ls
+cd _work
+ls
+cd folder of github
+ls
+cd build
+pwd
+cd /etc/nginx
+ls
+cd sites-available
+ls
+sudo rm default
+sudo nano default
+sudo service nginx restart
+sudo chmod +x
+
+Code for default nginx file:
+
+server {
+  listen 80 default_server;
+  server_name _;
+
+  # react app & front-end files
+  location / {
+   root __path__;
+   try_files $uri /index.html;
+  }
+
+}
+
+Chmod + all path
