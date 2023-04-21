@@ -22,7 +22,6 @@ function App()
 //   <table>
 //       <thead>
 //       <tr>
-//           <th>ID</th>
 //           <th>Name</th>
 //           <th>Email</th>
 //           <th>Address</th>
