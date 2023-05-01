@@ -24,21 +24,6 @@ function App()
       </BrowserRouter>
   </div>
   );
-
-//   return <>
-//   <table>
-//       <thead>
-//       <tr>
-//           <th>Name</th>
-//           <th>Email</th>
-//           <th>Address</th>
-//       </tr>
-//       </thead>
-//       <tbody>
-//       <UserData user={user}/>
-//       </tbody>
-//   </table>
-// </>
 }
 
 export default App;
