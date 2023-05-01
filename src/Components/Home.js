@@ -13,6 +13,7 @@ function Home()
                     <div className="header-right">
                         <a href="/">Home</a>
                         <a href="/user">Register</a>
+                        <a href="/scholarship">Scholarship</a>
                         <a href="/user/authenticate">Login</a>
                     </div>
     
