@@ -18,16 +18,16 @@ function Login() {
     };
     console.log(JSON.stringify(user));
 
-    axios.post("/api/user/authenticate", user)
+    axios.post("http://localhost:5555/user/authenticate", user)
       .then(response => {
         console.log('--------------')
         console.log(response.data)
         console.log('--------------')
-        if(response.data.data === "success"){
+        if (response.data.data === "success") {
           console.log("I am in success")
           navigate("/");
         }
-        
+
       })
 
     // fetch("http://localhost:5555/user/authenticate", requestOptions)
