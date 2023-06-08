@@ -1,6 +1,7 @@
 import React, { Fragment } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
+import Footer from './Footer'
 
 function Home()
 {

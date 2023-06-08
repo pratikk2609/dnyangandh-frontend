@@ -6,6 +6,7 @@ import Home from "./Components/Home.js"
 import UserList from "./Components/UserList.js"
 import ScholarshipReg from "./Components/ScholarshipReg.js";
 import ScholarshipList from "./Components/ScholarshipList.js";
+import Footer from "./Components/Footer.js";
 
 function App()
 {
@@ -19,6 +20,7 @@ function App()
           <Route path="/userlist" element={<UserList/>}/>
           <Route path="/Scholarship" element={<ScholarshipReg/>}/>
           <Route path="/Scholarshiplist" element={<ScholarshipList/>}/>
+          <Route path="/Footer" element={<Footer/>}/>
           
         </Routes>
       </BrowserRouter>
