@@ -36,7 +36,7 @@ function Register() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user)
         };
-        fetch('/api/user', requestOptions)
+        fetch('http://localhost:5555/user', requestOptions)
             .then(response => {
                 navigate("/user/authenticate")
             })

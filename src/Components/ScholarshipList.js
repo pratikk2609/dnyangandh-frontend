@@ -37,7 +37,7 @@ function ScholarshipList() {
 
                 {users && users.map(d => <tr>
 
-                    <th> {d.username}</th>
+                    <th> {d.name}</th>
                     <th>{d.description}</th>
                     <th>{d._id}</th>
                     <th> <button type="button" onClick={() => handleSubmit(d._id)} >Delete </button></th>
