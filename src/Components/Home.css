@@ -1,0 +1,12 @@
+.img-home {
+  padding-bottom: 2rem;
+}
+.mission-container , .mission-details {
+    border: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 10px; 
+  }
+  .mission-img, .mission-tagline {
+    padding: 20px;
+  }
