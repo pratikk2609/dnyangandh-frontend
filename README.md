@@ -53,4 +53,3 @@ Code for default nginx file:
 }
 
 -Chmod + all path
-pushparat
