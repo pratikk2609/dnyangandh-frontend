@@ -3,8 +3,7 @@ import axios from "axios";
 
 function ScholarshipList() {
     const [users, setusers] = useState();
-    const [userid, setuserid] = useState();
-
+    
     const handleSubmit = (e) => {
         console.log("clicked ", e)
         axios.delete('http://localhost:5555/Scholarship/'+e).then((res) => {
