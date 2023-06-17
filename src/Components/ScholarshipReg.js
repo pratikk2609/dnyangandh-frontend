@@ -25,7 +25,7 @@ function ScholarshipReg() {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user)
         };
-        fetch('http://localhost:5555/scholarship', requestOptions)
+        fetch('api/scholarship', requestOptions)
             .then(response => {
                 navigate("/scholarshipList")
             })

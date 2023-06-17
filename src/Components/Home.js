@@ -1,9 +1,12 @@
 import React, { Fragment } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
+<<<<<<< HEAD
 import bg from '../images/bg.jpg'
 import './Home.css'
 import Footer from './Footer'
+=======
+>>>>>>> 2280497ea74397710cdf1afeb6409d784d438918
 
 function Home() {
     return (
