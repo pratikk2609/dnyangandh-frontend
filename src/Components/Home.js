@@ -5,6 +5,7 @@ import bg from '../images/bg.jpg'
 import './Home.css'
 import Footer from './Footer'
 
+
 function Home() {
     return (
 
